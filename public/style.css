@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    overflow: scroll;
+    padding:0;
+    margin:0;
+}
+nav {
+    position: fixed;
+    z-index: 20;
+    box-shadow: none;
+    padding: 0 10px;
+    color:grey;
+    height: 40px;
+    border-bottom: 1px solid rgb(145, 168, 175);
+    
+}
+nav ul a {
+    color: rgb(53, 52, 52);
+    line-height: 35px;
+    
+}
+nav ul a:hover {
+    color: rgb(53, 52, 52);
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 0px 4px #fff inset;
+}
+
+nav ul li.active {
+    background-color: rgba(210, 222, 226, .5);
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 0px 4px #fff inset;
+}
+.brand-logo .brand, .brand-logo i{
+    color:rgb(53, 52, 52)
+}
+
+.tabs {
+    margin-top: 40px;
+    position: fixed;
+    z-index: 20;
+}
+.ou{
+    width: 30vw;height: 10vh;
+}
+.box{
+    margin-top: 132px;
+}
+.row .col {
+    padding: 0;
+}
+
+.background {
+    background-color:#8eb6ca;
+   margin-left: 5px;
+}
+#tabs-swipe-demo {
+    margin-left: 5px;
+}
+#tabs-swipe-demo .tab a{
+    color:#000;
+}
+#tabs-swipe-demo .tab a:hover {
+    background-color:#b8d4e2;
+    color:#000;
+}
+#tabs-swipe-demo .tab a.active {
+    background-color:#8eb6ca;
+    color:#000;
+} 
+/* #tabs-swipe-demo .tab a:active {
+    background-color:#8eb6ca;
+    color:#000;
+}  */
+#tabs-swipe-demo .indicator {
+    background-color:#4f626b;
+}
+
+.sidenav {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(126, 153, 165);
+    padding: 5px;
+    padding-left: 5px;
+    border-radius: 5px
+}
+.brand-logo .brand, .brand-logo i{
+    color: #8eb6ca;
+    /* color: white; */
+}
+nav .brand-logo{
+    font-size: 40px;
+    line-height: 40px;
+
+    
+}
+.brand {
+    /* background-color: #8eb6ca; */
+    padding: 0px 80px;
+    font-family: 'Stick No Bills', sans-serif;
+    
+}
+h1{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    color: #8eb6ca;
+    left: 30vw;
+
+}
+/* .h {
+    margin:0 auto; 
+} */
+.label {
+    display: flex;
+    width: 135px;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgb(106, 134, 141);
+    cursor: pointer;
+    font-size: 15px;
+    color: white
+}
+.analitics-done {
+    margin-left: 20px;
+}
