@@ -32,7 +32,6 @@ app.use(session({
     secret: 'some string',
     resave: false,
     saveUninitialized: false
-
 }))
 app.disable('x-powered-by');
 app.use(multer({storage:storageConfig}).single("filedata"));

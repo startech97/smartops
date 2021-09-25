@@ -20,12 +20,21 @@ if(document.querySelector('.inp')) {
     label.style.paddingLeft = '20px'
     })
 }
+const skills = [
+    'Стрессоустойчивость',
+    'Организованность',
+    'Ориентация на результат ',
+    'Эмоциональный интеллект',
+    'Мотивация',
+    'Скорость работы',
+    'Работа в команде'
+]
 
 var ctx2 = document.getElementById('myChart2').getContext('2d');
 var myChart2 = new Chart(ctx2, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: skills,
         datasets: [
             {
             label: 'корреляционный вес',
@@ -62,12 +71,12 @@ var myChart2 = new Chart(ctx2, {
     }
 });
 var ctx3 = document.getElementById('myChart3').getContext('2d');
-var myChart2 = new Chart(ctx3, {
+var myChart3 = new Chart(ctx3, {
     type: 'radar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: skills,
         datasets: [{
-            label: '# of Votes',
+            label: 'Сотрудник',
             data: [60,70,75,80,90,91],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -96,23 +105,64 @@ var myChart2 = new Chart(ctx3, {
         }
     }
 });
-
-const a = document.querySelectorAll('.a')
-
-for(let i =0;i< a.length; i++) {
-    a[i].addEventListener('click',(e)=>{
-        console.log(e.target.classList.contains('click'))
-        if(e.target.classList.contains('click')) {
-            e.target.classList.remove('click')
-        }else {
-            e.target.classList.add('click')
+var ctx4 = document.getElementById('myChart4').getContext('2d');
+var myChart4 = new Chart(ctx4,{
+    type: 'bar',
+    data: {
+        labels: ['Январь','Февраль','Март','Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь'],
+        datasets: [
+            {
+            label: skills[0],
+            type: 'bar',
+            backgroundColor: 'rgba(255, 99, 132, 1)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+            data: [45,12,02,43,11,24,71,32,88],
+            fill: false,
+            yAxisID: 'left-y-axis'
+        },
+        {
+            label: skills[1],
+            type: 'bar',
+            backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+            data: [60,70,75,80,90,91,80,80,80],
+            fill: false,
+            yAxisID: 'right-y-axis'
+        },
+        {
+            label: `${skills[1]}(Лин.)`,
+            type: 'line',
+            backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+            data: [60,70,75,80,90,91,80,80,80],
+            fill: false,
+            yAxisID: 'right-y-axis'
+        },
+        {
+            label: skills[2],
+            type: 'bar',
+            backgroundColor: 'rgba(255, 206, 86, 0.6)',
+                borderColor: 'rgba(255, 206, 86, 1)',
+            data: [60,70,75,53,54,77,32,85,90],
+            fill: false,
+            yAxisID: 'right-y-axis'
+        },
+    ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                id: 'left-y-axis',
+                type: 'linear',
+                position: 'left'
+            }, {
+                id: 'right-y-axis',
+                type: 'linear',
+                position: 'right'
+            }]
         }
-        for(let l =0;l< a.length; l++) {
-            if(a[l] !== e.target) {
-                a[l].classList.remove('click')
-            }
-        }
-    })
+    } 
+});
 
-}
+
 

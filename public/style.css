@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 body{
     overflow: scroll;
     padding:0;
@@ -72,10 +71,6 @@ nav ul li.active {
     background-color:#8eb6ca;
     color:#000;
 } 
-/* #tabs-swipe-demo .tab a:active {
-    background-color:#8eb6ca;
-    color:#000;
-}  */
 #tabs-swipe-demo .indicator {
     background-color:#4f626b;
 }
@@ -89,32 +84,36 @@ nav ul li.active {
     border-radius: 5px
 }
 .brand-logo .brand, .brand-logo i{
-    color: #8eb6ca;
-    /* color: white; */
+    color: black;
 }
 nav .brand-logo{
-    font-size: 40px;
+    font-size: 31px;
     line-height: 40px;
 
     
 }
 .brand {
-    /* background-color: #8eb6ca; */
-    padding: 0px 80px;
+    padding: 0px 30px;
     font-family: 'Stick No Bills', sans-serif;
     
 }
+.brand span {
+    background-color: black;
+    padding: 0 10px;
+    line-height: 0;
+    color: white;
+    margin-right: 10px;
+    border-radius:6px;
+}
 h1{
-    font-family: 'Stick No Bills', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-size: 40px;
     line-height: 40px;
     color: #8eb6ca;
     left: 30vw;
 
 }
-/* .h {
-    margin:0 auto; 
-} */
+
 .label {
     display: flex;
     width: 135px;
@@ -128,4 +127,54 @@ h1{
 }
 .analitics-done {
     margin-left: 20px;
+}
+.user-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.icons-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.partners-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+.rec-wrap{
+    margin-left: 20px;
+}
+.partner{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(126, 153, 165);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white
+
+}
+.partner button {
+    width: 150px;
+    height: 20px;
+    background-color:yellow;
+    border-radius: 5px;
+    color: rgb(78, 78, 78);
+    cursor:pointer;
+    line-height: 0;
+
+
+}
+.right-block, .left-block {
+    display: flex;
+    justify-content: space-around;
+}
+.img-wrap {
+    width: 40vw;
+}
+.img-wrap img {
+    width: 100%;
+}
+.info {
+    display: flex;
 }

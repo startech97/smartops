@@ -6,3 +6,11 @@ exports.getReportPage = async(req,res) => {
         
     })
 }
+
+exports.getDepartmentPage = async(req,res) => {
+
+    res.render('report/selectDepartment', {
+        isReport: true,
+        
+    })
+}

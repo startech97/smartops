@@ -4,7 +4,7 @@
         <div class="logo-wrap">
             <a href="/" class="brand-logo">
             {{!-- <i class="material-icons">functions</i> --}}
-            <div class="brand">smartops</div>
+            <div class="brand"><span>s</span>smartops</div>
         </a>
         </div>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -15,9 +15,9 @@
             {{/if}}
             {{#if isAuth}}
                     {{#if isReport}}
-                    <li class="active"><a href="/report">Отчеты</a></li>
+                    <li class="active"><a href="/report/department">Отчеты</a></li>
                     {{else}}
-                        <li><a href="/report">Отчеты</a></li>
+                        <li><a href="/report/department">Отчеты</a></li>
                     {{/if}}
                 
                 {{#if isDocs}}
