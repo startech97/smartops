@@ -178,3 +178,6 @@ h1{
 .info {
     display: flex;
 }
+.card-panel-main_1 {
+    height: 500px;
+  }
